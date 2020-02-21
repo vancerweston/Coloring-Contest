@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <link href='style.css' type='stylesheet'>
+        <link href='style.css' rel='stylesheet' type= 'text/css'>
         <title>Coloring Contest Registration</title>
     </header>
     <body>
         <h2>Weston's Coloring Competition</h2>
-        <p>The coloring contest will be divided into different
-            age groups. Please fill out the form below to register
-             and find out if you are eligable as well as 
-            what age group you will be competing in.
-        </p>
-        
-        <form name='colorForm'>
-            <lable><span>First Name: </span><input name='firstName' type='text' value=''></lable>
-            <lable><span>Last Name: </span><input name='lastName' type='text' value=''></lable>
-            <lable><span>Grade Level: </span><input name='gradeLevel' type='text/Number' value=''><span id='gradeInputExample'>Input grade with the following format: K, 1, 2, 3... 9, 10, ect.</span></lable>
-        </form>
-        <button onclick='colorContestSubmit()'>Register</button>
-        <span>
-            <h3>Registration Results</h3>
-            <p id='formOutput'>Fill out the registration form to see what your results are.</p> 
-        </span>
+        <fieldset id='firstFieldset'><legend>Registration Form</legend>
+            <p>The coloring contest will be divided into different
+                age groups. Please fill out the form below to register
+                and find out if you are eligable as well as 
+                what age group you will be competing in.
+            </p>
+            
+            <form name='colorForm'>
+                <lable><span>First Name: </span><input name='firstName' type='text' value=''></lable>
+                <lable><span>Last Name: </span><input name='lastName' type='text' value=''></lable>
+                <lable><span>Grade Level: </span><input name='gradeLevel' type='text/Number' value=''></lable>
+                <lable><span id='gradeInputExample'>Input grade with the following format: K, 1, 2, 3... 9, 10, ect.</span></lable> 
+            </form>
+            <button onclick='colorContestSubmit()'>Register</button>
+        </fieldset>
+        <fieldset><legend>Registration Results</legend>
+            <span>    
+                <p id='formOutput'>Fill out the registration form to see what your results are.</p> 
+            </span>
+        </fieldset>
+        <div></div>
+        <fieldset><legend>Short Response</legend>
+            <h3>What does finally do?</h3>
+            <p>Finally lets the coder execute code after the try and catch no matter what the result of the try and catch are.</p>
+            <h3>What challenges did you face in completing this assignment and how did you overcome them?</h3>
+            <p>I ran into some challenges with checking the grade input against a group of numbers. Once I decided to use an array, and after a little research, it got more simple.</p>
+            <h3>The form above is somewhat contrived. What ideas would you have to improve the form and the user experience? Explain.</h3>
+            <p>I thought it would be nice for the user to recieve alerts in the browser if there was a problem with their application, so I added those. I think a little more depth into who the user is, 
+                for example a "Tell Us About You" input or an email field so we have a contact to the user.</p>
+        </fieldset>
         <footer>
-            <p>Weston's Coloring Competion does not acutally exsist.
+            <p id='footerText'>Weston's Coloring Competion does not acutally exsist.
                 This website was created for practice with error handling.</p>
         </footer>
     </body>
-    <script src='main.js'></script>
+    <script type='text/javascript' src='main.js'></script>
 </html>
