@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link href='style.css' type='stylesheet'>
+        <title>Coloring Contest Registration</title>
+    </header>
+    <body>
+        <h2>Weston's Coloring Competition</h2>
+        <p>The coloring contest will be divided into different
+            age groups. Please fill out the form below to register
+             and find out if you are eligable as well as 
+            what age group you will be competing in.
+        </p>
+        
+        <form name='colorForm'>
+            <lable><span>First Name: </span><input name='firstName' type='text' value=''></lable>
+            <lable><span>Last Name: </span><input name='lastName' type='text' value=''></lable>
+            <lable><span>Grade Level: </span><input name='gradeLevel' type='text/Number' value=''><span id='gradeInputExample'>Input grade with the following format: K, 1, 2, 3... 9, 10, ect.</span></lable>
+        </form>
+        <button onclick='colorContestSubmit()'>Register</button>
+        <span>
+            <h3>Registration Results</h3>
+            <p id='formOutput'>Fill out the registration form to see what your results are.</p> 
+        </span>
+        <footer>
+            <p>Weston's Coloring Competion does not acutally exsist.
+                This website was created for practice with error handling.</p>
+        </footer>
+    </body>
+    <script src='main.js'></script>
+</html>
