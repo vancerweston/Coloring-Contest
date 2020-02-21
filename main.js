@@ -12,15 +12,15 @@ function colorContestSubmit() {
 
 
     if (firstName === '' || lastName === '') {
-        alert('Both First and Last Name are required!');
+       return alert('Both First and Last Name are required!');
     }
 
     if (!isNaN(firstName) || !isNaN(lastName)) {
-        alert('You entered a number as your first or last name. Please enter a vaild name.');
+       return alert('You entered a number as your first or last name. Please enter a vaild name.');
     }
 
     if (gradeInput === '') {
-        alert('Please enter your grade!');
+        return alert('Please enter your grade!');
     }
 
     if (elementary.includes(Number(gradeInput))) {
